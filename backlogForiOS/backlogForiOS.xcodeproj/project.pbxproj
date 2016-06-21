@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF4F06FE1D19723D00E97062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F06FD1D19723D00E97062 /* AppDelegate.swift */; };
+		FF4F07001D19723D00E97062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F06FF1D19723D00E97062 /* ViewController.swift */; };
+		FF4F07031D19723D00E97062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4F07011D19723D00E97062 /* Main.storyboard */; };
+		FF4F07061D19723D00E97062 /* backlogForiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF4F07041D19723D00E97062 /* backlogForiOS.xcdatamodeld */; };
+		FF4F07081D19723D00E97062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4F07071D19723D00E97062 /* Assets.xcassets */; };
+		FF4F070B1D19723D00E97062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */; };
+		FF4F07161D19723D00E97062 /* backlogForiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F07151D19723D00E97062 /* backlogForiOSTests.swift */; };
+		FF4F07211D19723D00E97062 /* backlogForiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F07201D19723D00E97062 /* backlogForiOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4F07121D19723D00E97062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4F06F21D19723D00E97062 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4F06F91D19723D00E97062;
+			remoteInfo = backlogForiOS;
+		};
+		FF4F071D1D19723D00E97062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4F06F21D19723D00E97062 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4F06F91D19723D00E97062;
+			remoteInfo = backlogForiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF4F06FA1D19723D00E97062 /* backlogForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = backlogForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4F06FD1D19723D00E97062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF4F06FF1D19723D00E97062 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF4F07021D19723D00E97062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF4F07051D19723D00E97062 /* backlogForiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = backlogForiOS.xcdatamodel; sourceTree = "<group>"; };
+		FF4F07071D19723D00E97062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF4F070A1D19723D00E97062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF4F070C1D19723D00E97062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4F07111D19723D00E97062 /* backlogForiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = backlogForiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4F07151D19723D00E97062 /* backlogForiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backlogForiOSTests.swift; sourceTree = "<group>"; };
+		FF4F07171D19723D00E97062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4F071C1D19723D00E97062 /* backlogForiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = backlogForiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4F07201D19723D00E97062 /* backlogForiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backlogForiOSUITests.swift; sourceTree = "<group>"; };
+		FF4F07221D19723D00E97062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF4F06F71D19723D00E97062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4F070E1D19723D00E97062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4F07191D19723D00E97062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF4F06F11D19723D00E97062 = {
+			isa = PBXGroup;
+			children = (
+				FF4F06FC1D19723D00E97062 /* backlogForiOS */,
+				FF4F07141D19723D00E97062 /* backlogForiOSTests */,
+				FF4F071F1D19723D00E97062 /* backlogForiOSUITests */,
+				FF4F06FB1D19723D00E97062 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF4F06FB1D19723D00E97062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF4F06FA1D19723D00E97062 /* backlogForiOS.app */,
+				FF4F07111D19723D00E97062 /* backlogForiOSTests.xctest */,
+				FF4F071C1D19723D00E97062 /* backlogForiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4F06FC1D19723D00E97062 /* backlogForiOS */ = {
+			isa = PBXGroup;
+			children = (
+				FF4F06FD1D19723D00E97062 /* AppDelegate.swift */,
+				FF4F06FF1D19723D00E97062 /* ViewController.swift */,
+				FF4F07011D19723D00E97062 /* Main.storyboard */,
+				FF4F07071D19723D00E97062 /* Assets.xcassets */,
+				FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */,
+				FF4F070C1D19723D00E97062 /* Info.plist */,
+				FF4F07041D19723D00E97062 /* backlogForiOS.xcdatamodeld */,
+			);
+			path = backlogForiOS;
+			sourceTree = "<group>";
+		};
+		FF4F07141D19723D00E97062 /* backlogForiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4F07151D19723D00E97062 /* backlogForiOSTests.swift */,
+				FF4F07171D19723D00E97062 /* Info.plist */,
+			);
+			path = backlogForiOSTests;
+			sourceTree = "<group>";
+		};
+		FF4F071F1D19723D00E97062 /* backlogForiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4F07201D19723D00E97062 /* backlogForiOSUITests.swift */,
+				FF4F07221D19723D00E97062 /* Info.plist */,
+			);
+			path = backlogForiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF4F06F91D19723D00E97062 /* backlogForiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4F07251D19723D00E97062 /* Build configuration list for PBXNativeTarget "backlogForiOS" */;
+			buildPhases = (
+				FF4F06F61D19723D00E97062 /* Sources */,
+				FF4F06F71D19723D00E97062 /* Frameworks */,
+				FF4F06F81D19723D00E97062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = backlogForiOS;
+			productName = backlogForiOS;
+			productReference = FF4F06FA1D19723D00E97062 /* backlogForiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF4F07101D19723D00E97062 /* backlogForiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4F07281D19723D00E97062 /* Build configuration list for PBXNativeTarget "backlogForiOSTests" */;
+			buildPhases = (
+				FF4F070D1D19723D00E97062 /* Sources */,
+				FF4F070E1D19723D00E97062 /* Frameworks */,
+				FF4F070F1D19723D00E97062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4F07131D19723D00E97062 /* PBXTargetDependency */,
+			);
+			name = backlogForiOSTests;
+			productName = backlogForiOSTests;
+			productReference = FF4F07111D19723D00E97062 /* backlogForiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF4F071B1D19723D00E97062 /* backlogForiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4F072B1D19723D00E97062 /* Build configuration list for PBXNativeTarget "backlogForiOSUITests" */;
+			buildPhases = (
+				FF4F07181D19723D00E97062 /* Sources */,
+				FF4F07191D19723D00E97062 /* Frameworks */,
+				FF4F071A1D19723D00E97062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4F071E1D19723D00E97062 /* PBXTargetDependency */,
+			);
+			name = backlogForiOSUITests;
+			productName = backlogForiOSUITests;
+			productReference = FF4F071C1D19723D00E97062 /* backlogForiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF4F06F21D19723D00E97062 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = tomoki;
+				TargetAttributes = {
+					FF4F06F91D19723D00E97062 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					FF4F07101D19723D00E97062 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FF4F06F91D19723D00E97062;
+					};
+					FF4F071B1D19723D00E97062 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FF4F06F91D19723D00E97062;
+					};
+				};
+			};
+			buildConfigurationList = FF4F06F51D19723D00E97062 /* Build configuration list for PBXProject "backlogForiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF4F06F11D19723D00E97062;
+			productRefGroup = FF4F06FB1D19723D00E97062 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF4F06F91D19723D00E97062 /* backlogForiOS */,
+				FF4F07101D19723D00E97062 /* backlogForiOSTests */,
+				FF4F071B1D19723D00E97062 /* backlogForiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF4F06F81D19723D00E97062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4F070B1D19723D00E97062 /* LaunchScreen.storyboard in Resources */,
+				FF4F07081D19723D00E97062 /* Assets.xcassets in Resources */,
+				FF4F07031D19723D00E97062 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4F070F1D19723D00E97062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4F071A1D19723D00E97062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF4F06F61D19723D00E97062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4F07001D19723D00E97062 /* ViewController.swift in Sources */,
+				FF4F06FE1D19723D00E97062 /* AppDelegate.swift in Sources */,
+				FF4F07061D19723D00E97062 /* backlogForiOS.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4F070D1D19723D00E97062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4F07161D19723D00E97062 /* backlogForiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4F07181D19723D00E97062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4F07211D19723D00E97062 /* backlogForiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4F07131D19723D00E97062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4F06F91D19723D00E97062 /* backlogForiOS */;
+			targetProxy = FF4F07121D19723D00E97062 /* PBXContainerItemProxy */;
+		};
+		FF4F071E1D19723D00E97062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4F06F91D19723D00E97062 /* backlogForiOS */;
+			targetProxy = FF4F071D1D19723D00E97062 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF4F07011D19723D00E97062 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4F07021D19723D00E97062 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4F070A1D19723D00E97062 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF4F07231D19723D00E97062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF4F07241D19723D00E97062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF4F07261D19723D00E97062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = backlogForiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomoki.com.backlogForiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF4F07271D19723D00E97062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = backlogForiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomoki.com.backlogForiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF4F07291D19723D00E97062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = backlogForiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomoki.com.backlogForiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/backlogForiOS.app/backlogForiOS";
+			};
+			name = Debug;
+		};
+		FF4F072A1D19723D00E97062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = backlogForiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomoki.com.backlogForiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/backlogForiOS.app/backlogForiOS";
+			};
+			name = Release;
+		};
+		FF4F072C1D19723D00E97062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = backlogForiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomoki.com.backlogForiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = backlogForiOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FF4F072D1D19723D00E97062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = backlogForiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomoki.com.backlogForiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = backlogForiOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF4F06F51D19723D00E97062 /* Build configuration list for PBXProject "backlogForiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4F07231D19723D00E97062 /* Debug */,
+				FF4F07241D19723D00E97062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4F07251D19723D00E97062 /* Build configuration list for PBXNativeTarget "backlogForiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4F07261D19723D00E97062 /* Debug */,
+				FF4F07271D19723D00E97062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF4F07281D19723D00E97062 /* Build configuration list for PBXNativeTarget "backlogForiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4F07291D19723D00E97062 /* Debug */,
+				FF4F072A1D19723D00E97062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF4F072B1D19723D00E97062 /* Build configuration list for PBXNativeTarget "backlogForiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4F072C1D19723D00E97062 /* Debug */,
+				FF4F072D1D19723D00E97062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF4F07041D19723D00E97062 /* backlogForiOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF4F07051D19723D00E97062 /* backlogForiOS.xcdatamodel */,
+			);
+			currentVersion = FF4F07051D19723D00E97062 /* backlogForiOS.xcdatamodel */;
+			path = backlogForiOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF4F06F21D19723D00E97062 /* Project object */;
+}
