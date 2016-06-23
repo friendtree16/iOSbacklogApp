@@ -116,6 +116,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FF0C4BD51D1C23BC005F2D84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFEB37461D1C0C23000A1A0D /* BLFNewStoryViewController.swift */,
+				FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF0C4BD61D1C23DB005F2D84 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FF0C4BD31D1C1E3B005F2D84 /* BLFRealmManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		FF4F06F11D19723D00E97062 = {
 			isa = PBXGroup;
 			children = (
@@ -142,13 +159,12 @@
 			isa = PBXGroup;
 			children = (
 				FF4F06FD1D19723D00E97062 /* AppDelegate.swift */,
+				FF0C4BD51D1C23BC005F2D84 /* View */,
+				FF0C4BD61D1C23DB005F2D84 /* Manager */,
 				FF4F07071D19723D00E97062 /* Assets.xcassets */,
 				FF4F07041D19723D00E97062 /* backlogForiOS.xcdatamodeld */,
-				FFEB37461D1C0C23000A1A0D /* BLFNewStoryViewController.swift */,
-				FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */,
 				FF4F070C1D19723D00E97062 /* Info.plist */,
 				FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */,
-				FF0C4BD31D1C1E3B005F2D84 /* BLFRealmManager.swift */,
 			);
 			path = backlogForiOS;
 			sourceTree = "<group>";
