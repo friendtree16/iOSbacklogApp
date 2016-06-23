@@ -14,6 +14,8 @@ class BLFNewStoryViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.view.backgroundColor = UIColor.whiteColor()
+        // 右ボタンを作成する.
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "RightBtn", style: .Plain, target: self, action: #selector(self.onClickRegistrationButton))
         // Do any additional setup after loading the view.
     }
 
@@ -23,6 +25,10 @@ class BLFNewStoryViewController: UIViewController {
     }
     
 
+    func onClickRegistrationButton()  {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     /*
     // MARK: - Navigation
 
