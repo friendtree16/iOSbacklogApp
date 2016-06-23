@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1C1BDF1D1AAC0900C3944B /* BLFTopListBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */; };
+		FF1C1BE31D1AAE5300C3944B /* BLFTopListBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C1BE21D1AAE5300C3944B /* BLFTopListBaseView.swift */; };
 		FF4F06FE1D19723D00E97062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F06FD1D19723D00E97062 /* AppDelegate.swift */; };
-		FF4F07001D19723D00E97062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F06FF1D19723D00E97062 /* ViewController.swift */; };
-		FF4F07031D19723D00E97062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4F07011D19723D00E97062 /* Main.storyboard */; };
 		FF4F07061D19723D00E97062 /* backlogForiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF4F07041D19723D00E97062 /* backlogForiOS.xcdatamodeld */; };
 		FF4F07081D19723D00E97062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4F07071D19723D00E97062 /* Assets.xcassets */; };
 		FF4F070B1D19723D00E97062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */; };
@@ -35,10 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFTopListBaseViewController.swift; sourceTree = "<group>"; };
+		FF1C1BE21D1AAE5300C3944B /* BLFTopListBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFTopListBaseView.swift; sourceTree = "<group>"; };
 		FF4F06FA1D19723D00E97062 /* backlogForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = backlogForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4F06FD1D19723D00E97062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF4F06FF1D19723D00E97062 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF4F07021D19723D00E97062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF4F07051D19723D00E97062 /* backlogForiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = backlogForiOS.xcdatamodel; sourceTree = "<group>"; };
 		FF4F07071D19723D00E97062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF4F070A1D19723D00E97062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF1C1BE41D1AAE6400C3944B /* BLFTopList */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C1BE21D1AAE5300C3944B /* BLFTopListBaseView.swift */,
+				FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */,
+			);
+			name = BLFTopList;
+			sourceTree = "<group>";
+		};
 		FF4F06F11D19723D00E97062 = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				FF4F06FD1D19723D00E97062 /* AppDelegate.swift */,
-				FF4F06FF1D19723D00E97062 /* ViewController.swift */,
-				FF4F07011D19723D00E97062 /* Main.storyboard */,
+				FF1C1BE41D1AAE6400C3944B /* BLFTopList */,
 				FF4F07071D19723D00E97062 /* Assets.xcassets */,
 				FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */,
 				FF4F070C1D19723D00E97062 /* Info.plist */,
@@ -233,7 +241,6 @@
 			files = (
 				FF4F070B1D19723D00E97062 /* LaunchScreen.storyboard in Resources */,
 				FF4F07081D19723D00E97062 /* Assets.xcassets in Resources */,
-				FF4F07031D19723D00E97062 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF4F07001D19723D00E97062 /* ViewController.swift in Sources */,
 				FF4F06FE1D19723D00E97062 /* AppDelegate.swift in Sources */,
+				FF1C1BE31D1AAE5300C3944B /* BLFTopListBaseView.swift in Sources */,
 				FF4F07061D19723D00E97062 /* backlogForiOS.xcdatamodeld in Sources */,
+				FF1C1BDF1D1AAC0900C3944B /* BLFTopListBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FF4F07011D19723D00E97062 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF4F07021D19723D00E97062 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -401,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = backlogForiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomoki.com.backlogForiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = backlogForiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomoki.com.backlogForiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +487,7 @@
 				FF4F07271D19723D00E97062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF4F07281D19723D00E97062 /* Build configuration list for PBXNativeTarget "backlogForiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +496,7 @@
 				FF4F072A1D19723D00E97062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF4F072B1D19723D00E97062 /* Build configuration list for PBXNativeTarget "backlogForiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +505,7 @@
 				FF4F072D1D19723D00E97062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
