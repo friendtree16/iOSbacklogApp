@@ -17,8 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // Navication Controllerを生成する.
+        let myNavigationController: UINavigationController = UINavigationController(rootViewController: BLFTopListBaseViewController())
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = BLFTopListBaseViewController()
+        self.window?.rootViewController = myNavigationController
         self.window?.makeKeyAndVisible()
         
         return true

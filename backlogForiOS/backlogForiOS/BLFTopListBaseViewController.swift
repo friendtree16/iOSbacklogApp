@@ -8,20 +8,26 @@
 
 import UIKit
 
-class BLFTopListBaseViewController: UIViewController {
+class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var topListBaseView: BLFTopListBaseView?
+    var topListBaseTableView: UITableView?
     
     override func loadView() {
         super.loadView()
         print(self.view.frame)
-        topListBaseView = BLFTopListBaseView(frame: self.view.frame)
-        self.view.addSubview(topListBaseView!)
+        // テーブルビュー作成
+        topListBaseTableView = UITableView(frame: self.view.frame)
+        topListBaseTableView?.delegate = self
+        topListBaseTableView?.dataSource = self
+        self.view.addSubview(topListBaseTableView!)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let addNewStoryBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(self.onClickAddNewStoryBarButton))
+        
+        self.navigationItem.setRightBarButtonItem(addNewStoryBarButton, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +35,23 @@ class BLFTopListBaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // セルの行数
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    // セルの内容を変更
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+        
+        cell.textLabel?.text = "test"
+        return cell
+    }
+    
+    // addボタンがタップされた時
+    func onClickAddNewStoryBarButton()  {
+        self.navigationController?.pushViewController(BLFNewStoryViewController(), animated: true)
+    }
     
     /*
     // MARK: - Navigation
