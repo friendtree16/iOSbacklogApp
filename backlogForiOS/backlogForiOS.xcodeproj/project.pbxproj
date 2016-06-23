@@ -10,6 +10,7 @@
 		077C8973691031D9414AC9BC /* Pods_backlogForiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4791FFA1CBC4FB2EF06B184 /* Pods_backlogForiOS.framework */; };
 		8E526D732B7A94522FC44D37 /* Pods_backlogForiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2EEA3AEB55203C33DE12DA /* Pods_backlogForiOSUITests.framework */; };
 		F14A6A1F43E438012B3FE4A0 /* Pods_backlogForiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28918EE270637E9A63E53AD5 /* Pods_backlogForiOSTests.framework */; };
+		FF0C4BD41D1C1E3B005F2D84 /* BLFRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C4BD31D1C1E3B005F2D84 /* BLFRealmManager.swift */; };
 		FF1C1BDF1D1AAC0900C3944B /* BLFTopListBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */; };
 		FF4F06FE1D19723D00E97062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F06FD1D19723D00E97062 /* AppDelegate.swift */; };
 		FF4F07061D19723D00E97062 /* backlogForiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF4F07041D19723D00E97062 /* backlogForiOS.xcdatamodeld */; };
@@ -47,6 +48,7 @@
 		A4791FFA1CBC4FB2EF06B184 /* Pods_backlogForiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_backlogForiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26C8CCB701C0D4D6FEFA575 /* Pods-backlogForiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-backlogForiOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-backlogForiOSUITests/Pods-backlogForiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2AD8FC016A1736101E6EF7A /* Pods-backlogForiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-backlogForiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-backlogForiOSTests/Pods-backlogForiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF0C4BD31D1C1E3B005F2D84 /* BLFRealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFRealmManager.swift; sourceTree = "<group>"; };
 		FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFTopListBaseViewController.swift; sourceTree = "<group>"; };
 		FF4F06FA1D19723D00E97062 /* backlogForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = backlogForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4F06FD1D19723D00E97062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */,
 				FF4F070C1D19723D00E97062 /* Info.plist */,
 				FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */,
+				FF0C4BD31D1C1E3B005F2D84 /* BLFRealmManager.swift */,
 			);
 			path = backlogForiOS;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 			files = (
 				FFEB37471D1C0C23000A1A0D /* BLFNewStoryViewController.swift in Sources */,
 				FF4F06FE1D19723D00E97062 /* AppDelegate.swift in Sources */,
+				FF0C4BD41D1C1E3B005F2D84 /* BLFRealmManager.swift in Sources */,
 				FF4F07061D19723D00E97062 /* backlogForiOS.xcdatamodeld in Sources */,
 				FF1C1BDF1D1AAC0900C3944B /* BLFTopListBaseViewController.swift in Sources */,
 			);

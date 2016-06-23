@@ -12,6 +12,8 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
 
     var topListBaseTableView: UITableView?
     
+    // MARK: - ViewControllerOverride
+    
     override func loadView() {
         super.loadView()
         print(self.view.frame)
@@ -35,9 +37,11 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - TableViewDelegate
+    
     // セルの行数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return BLFRealmManager.getRecordCount()
     }
     
     // セルの内容を変更
@@ -47,6 +51,8 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
         cell.textLabel?.text = "test"
         return cell
     }
+    
+    // MARK: - PrivateMethod
     
     // addボタンがタップされた時
     func onClickAddNewStoryBarButton()  {

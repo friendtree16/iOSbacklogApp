@@ -8,11 +8,15 @@
 
 import UIKit
 
+/**
+ * ストーリー新規登録画面
+ */
 class BLFNewStoryViewController: UIViewController {
 
+    // MARK: - ViewControllerOverride
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.view.backgroundColor = UIColor.whiteColor()
         // 右ボタンを作成する.
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "RightBtn", style: .Plain, target: self, action: #selector(self.onClickRegistrationButton))
@@ -24,8 +28,14 @@ class BLFNewStoryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // MARK: - PrivateMethod
+    
     func onClickRegistrationButton()  {
+        // 入力情報を取得して登録用オブジェクトを作成
+        // TODO:オブジェクトまだ考えてない
+        BLFRealmManager.registrationObject(nil)
+        
+        // 前の画面にpopする
         self.navigationController?.popViewControllerAnimated(true)
     }
     
