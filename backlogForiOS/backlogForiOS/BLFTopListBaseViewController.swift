@@ -11,6 +11,8 @@ import UIKit
 class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     var topListBaseTableView: UITableView?
+    var recodeData: Array<BLFStoryModel> = []
+    
     
     // MARK: - ViewControllerOverride
     
@@ -22,6 +24,12 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
         topListBaseTableView?.delegate = self
         topListBaseTableView?.dataSource = self
         self.view.addSubview(topListBaseTableView!)
+        
+        // Cell名の登録をおこなう.
+        self.topListBaseTableView!.registerNib(UINib(nibName: "BLFStoryRecodeCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        
+        let path1 = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as Array<String>
+        print(path1[0])
     }
     
     override func viewDidLoad() {
@@ -30,6 +38,14 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
         let addNewStoryBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(self.onClickAddNewStoryBarButton))
         
         self.navigationItem.setRightBarButtonItem(addNewStoryBarButton, animated: true)
+        
+        BLFRealmManager.sharedSingleton.getRecodeObject()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.recodeData = BLFRealmManager.sharedSingleton.getRecodeObject()
+        self.topListBaseTableView?.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,14 +57,14 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
     
     // セルの行数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return BLFRealmManager.getRecordCount()
+        return BLFRealmManager.sharedSingleton.getRecordCount()
     }
     
     // セルの内容を変更
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+        let cell: BLFStoryRecodeCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! BLFStoryRecodeCell
         
-        cell.textLabel?.text = "test"
+        cell.updateCell(recodeData, index: indexPath)
         return cell
     }
     

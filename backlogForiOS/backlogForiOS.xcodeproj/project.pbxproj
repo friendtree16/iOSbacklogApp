@@ -18,7 +18,10 @@
 		FF4F070B1D19723D00E97062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */; };
 		FF4F07161D19723D00E97062 /* backlogForiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F07151D19723D00E97062 /* backlogForiOSTests.swift */; };
 		FF4F07211D19723D00E97062 /* backlogForiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F07201D19723D00E97062 /* backlogForiOSUITests.swift */; };
+		FFEA2EDE1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA2EDC1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift */; };
+		FFEA2EDF1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFEA2EDD1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib */; };
 		FFEB37471D1C0C23000A1A0D /* BLFNewStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB37461D1C0C23000A1A0D /* BLFNewStoryViewController.swift */; };
+		FFF479281D1CD8C800219182 /* BLFStoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF479271D1CD8C800219182 /* BLFStoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +65,10 @@
 		FF4F071C1D19723D00E97062 /* backlogForiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = backlogForiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4F07201D19723D00E97062 /* backlogForiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backlogForiOSUITests.swift; sourceTree = "<group>"; };
 		FF4F07221D19723D00E97062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFEA2EDC1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFStoryRecodeCell.swift; sourceTree = "<group>"; };
+		FFEA2EDD1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLFStoryRecodeCell.xib; sourceTree = "<group>"; };
 		FFEB37461D1C0C23000A1A0D /* BLFNewStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFNewStoryViewController.swift; sourceTree = "<group>"; };
+		FFF479271D1CD8C800219182 /* BLFStoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFStoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,11 +122,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FF0A9A4F1D1D441C00B4DCFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFF479271D1CD8C800219182 /* BLFStoryModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FF0C4BD51D1C23BC005F2D84 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				FFEB37461D1C0C23000A1A0D /* BLFNewStoryViewController.swift */,
 				FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */,
+				FFEA2EDC1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift */,
+				FFEA2EDD1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -161,6 +177,7 @@
 				FF4F06FD1D19723D00E97062 /* AppDelegate.swift */,
 				FF0C4BD51D1C23BC005F2D84 /* View */,
 				FF0C4BD61D1C23DB005F2D84 /* Manager */,
+				FF0A9A4F1D1D441C00B4DCFF /* Model */,
 				FF4F07071D19723D00E97062 /* Assets.xcassets */,
 				FF4F07041D19723D00E97062 /* backlogForiOS.xcdatamodeld */,
 				FF4F070C1D19723D00E97062 /* Info.plist */,
@@ -298,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEA2EDF1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib in Resources */,
 				FF4F070B1D19723D00E97062 /* LaunchScreen.storyboard in Resources */,
 				FF4F07081D19723D00E97062 /* Assets.xcassets in Resources */,
 			);
@@ -449,8 +467,10 @@
 			files = (
 				FFEB37471D1C0C23000A1A0D /* BLFNewStoryViewController.swift in Sources */,
 				FF4F06FE1D19723D00E97062 /* AppDelegate.swift in Sources */,
+				FFEA2EDE1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift in Sources */,
 				FF0C4BD41D1C1E3B005F2D84 /* BLFRealmManager.swift in Sources */,
 				FF4F07061D19723D00E97062 /* backlogForiOS.xcdatamodeld in Sources */,
+				FFF479281D1CD8C800219182 /* BLFStoryModel.swift in Sources */,
 				FF1C1BDF1D1AAC0900C3944B /* BLFTopListBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
