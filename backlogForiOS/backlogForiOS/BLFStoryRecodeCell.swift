@@ -13,6 +13,9 @@ class BLFStoryRecodeCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var primaryLabel: UILabel!
     
+    var rowData: BLFStoryModel?
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,6 +30,8 @@ class BLFStoryRecodeCell: UITableViewCell {
     func updateCell(recodeData: Array<BLFStoryModel>, index: NSIndexPath) {
         if recodeData.count != 0 {
             let row = recodeData[index.row]
+            
+            self.rowData = row
             
             self.primaryLabel.text = String.init(format: "%d", row.priority)
             self.titleLabel.text = row.title
