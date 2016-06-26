@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     var topListBaseTableView: UITableView?
     var recodeData: Array<BLFStoryModel> = []
+    var realmNotification: NotificationToken?
     
     
     // MARK: - ViewControllerOverride
@@ -28,8 +30,12 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
         // Cell名の登録をおこなう.
         self.topListBaseTableView!.registerNib(UINib(nibName: "BLFStoryRecodeCell", bundle: nil), forCellReuseIdentifier: "Cell")
         
-        let path1 = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as Array<String>
-        print(path1[0])
+        // Realmが更新されたときのNotificationを設定
+        self.realmNotification = BLFRealmManager.sharedSingleton.realm.addNotificationBlock({ (notification, realm) in
+            // 更新されたデータを取得してテーブルを更新
+            self.recodeData = BLFRealmManager.sharedSingleton.getRecodeObject()
+            self.topListBaseTableView?.reloadData()
+        })
     }
     
     override func viewDidLoad() {
@@ -44,8 +50,7 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.recodeData = BLFRealmManager.sharedSingleton.getRecodeObject()
-        self.topListBaseTableView?.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
