@@ -20,7 +20,8 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
     
     override func loadView() {
         super.loadView()
-        print(self.view.frame)
+        
+        recodeData = BLFRealmManager.sharedSingleton.getRecodeObject()
         // テーブルビュー作成
         topListBaseTableView = UITableView(frame: self.view.frame)
         topListBaseTableView?.delegate = self
@@ -45,7 +46,6 @@ class BLFTopListBaseViewController: UIViewController,UITableViewDelegate,UITable
         
         self.navigationItem.setRightBarButtonItem(addNewStoryBarButton, animated: true)
         
-        BLFRealmManager.sharedSingleton.getRecodeObject()
     }
     
     override func viewDidAppear(animated: Bool) {

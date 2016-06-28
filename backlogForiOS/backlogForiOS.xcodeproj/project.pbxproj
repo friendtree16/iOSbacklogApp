@@ -136,7 +136,7 @@
 				FFEB37461D1C0C23000A1A0D /* BLFNewStoryViewController.swift */,
 				FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */,
 				FFEA2EDC1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift */,
-				FFEA2EDD1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib */,
+				FF830E481D1F590700D780DE /* XIB */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -202,6 +202,14 @@
 				FF4F07221D19723D00E97062 /* Info.plist */,
 			);
 			path = backlogForiOSUITests;
+			sourceTree = "<group>";
+		};
+		FF830E481D1F590700D780DE /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				FFEA2EDD1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib */,
+			);
+			name = XIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

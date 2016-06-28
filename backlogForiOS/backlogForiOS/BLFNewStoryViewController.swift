@@ -15,6 +15,11 @@ class BLFNewStoryViewController: UIViewController {
 
     // MARK: - ViewControllerOverride
     
+    override func loadView() {
+        super.loadView()
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
