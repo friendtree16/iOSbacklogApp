@@ -18,6 +18,16 @@
 		FF4F070B1D19723D00E97062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4F07091D19723D00E97062 /* LaunchScreen.storyboard */; };
 		FF4F07161D19723D00E97062 /* backlogForiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F07151D19723D00E97062 /* backlogForiOSTests.swift */; };
 		FF4F07211D19723D00E97062 /* backlogForiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F07201D19723D00E97062 /* backlogForiOSUITests.swift */; };
+		FF6824761D22AD2A00040016 /* BLFPriorityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6824741D22AD2A00040016 /* BLFPriorityTableViewCell.swift */; };
+		FF6824771D22AD2A00040016 /* BLFPriorityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6824751D22AD2A00040016 /* BLFPriorityTableViewCell.xib */; };
+		FF6824791D22AE6300040016 /* BLFBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6824781D22AE6300040016 /* BLFBaseTableViewCell.swift */; };
+		FF68247E1D22B34700040016 /* BLFStoryTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF68247C1D22B34700040016 /* BLFStoryTitleTableViewCell.swift */; };
+		FF68247F1D22B34700040016 /* BLFStoryTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF68247D1D22B34700040016 /* BLFStoryTitleTableViewCell.xib */; };
+		FF6824821D22B46A00040016 /* BLFPointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6824801D22B46A00040016 /* BLFPointTableViewCell.swift */; };
+		FF6824831D22B46A00040016 /* BLFPointTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6824811D22B46A00040016 /* BLFPointTableViewCell.xib */; };
+		FF6824851D22B77000040016 /* BLFStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6824841D22B77000040016 /* BLFStoryView.swift */; };
+		FF7FA9301D27A41400FE35DA /* BLFMainTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FA92E1D27A41400FE35DA /* BLFMainTextTableViewCell.swift */; };
+		FF7FA9311D27A41400FE35DA /* BLFMainTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7FA92F1D27A41400FE35DA /* BLFMainTextTableViewCell.xib */; };
 		FFEA2EDE1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA2EDC1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift */; };
 		FFEA2EDF1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFEA2EDD1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib */; };
 		FFEB37471D1C0C23000A1A0D /* BLFNewStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB37461D1C0C23000A1A0D /* BLFNewStoryViewController.swift */; };
@@ -65,6 +75,16 @@
 		FF4F071C1D19723D00E97062 /* backlogForiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = backlogForiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4F07201D19723D00E97062 /* backlogForiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backlogForiOSUITests.swift; sourceTree = "<group>"; };
 		FF4F07221D19723D00E97062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6824741D22AD2A00040016 /* BLFPriorityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFPriorityTableViewCell.swift; sourceTree = "<group>"; };
+		FF6824751D22AD2A00040016 /* BLFPriorityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLFPriorityTableViewCell.xib; sourceTree = "<group>"; };
+		FF6824781D22AE6300040016 /* BLFBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFBaseTableViewCell.swift; sourceTree = "<group>"; };
+		FF68247C1D22B34700040016 /* BLFStoryTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFStoryTitleTableViewCell.swift; sourceTree = "<group>"; };
+		FF68247D1D22B34700040016 /* BLFStoryTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLFStoryTitleTableViewCell.xib; sourceTree = "<group>"; };
+		FF6824801D22B46A00040016 /* BLFPointTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFPointTableViewCell.swift; sourceTree = "<group>"; };
+		FF6824811D22B46A00040016 /* BLFPointTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLFPointTableViewCell.xib; sourceTree = "<group>"; };
+		FF6824841D22B77000040016 /* BLFStoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFStoryView.swift; sourceTree = "<group>"; };
+		FF7FA92E1D27A41400FE35DA /* BLFMainTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFMainTextTableViewCell.swift; sourceTree = "<group>"; };
+		FF7FA92F1D27A41400FE35DA /* BLFMainTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLFMainTextTableViewCell.xib; sourceTree = "<group>"; };
 		FFEA2EDC1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFStoryRecodeCell.swift; sourceTree = "<group>"; };
 		FFEA2EDD1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLFStoryRecodeCell.xib; sourceTree = "<group>"; };
 		FFEB37461D1C0C23000A1A0D /* BLFNewStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLFNewStoryViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +156,12 @@
 				FFEB37461D1C0C23000A1A0D /* BLFNewStoryViewController.swift */,
 				FF1C1BDE1D1AAC0900C3944B /* BLFTopListBaseViewController.swift */,
 				FFEA2EDC1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift */,
+				FF6824841D22B77000040016 /* BLFStoryView.swift */,
+				FF6824781D22AE6300040016 /* BLFBaseTableViewCell.swift */,
+				FF6824741D22AD2A00040016 /* BLFPriorityTableViewCell.swift */,
+				FF68247C1D22B34700040016 /* BLFStoryTitleTableViewCell.swift */,
+				FF6824801D22B46A00040016 /* BLFPointTableViewCell.swift */,
+				FF7FA92E1D27A41400FE35DA /* BLFMainTextTableViewCell.swift */,
 				FF830E481D1F590700D780DE /* XIB */,
 			);
 			name = View;
@@ -208,6 +234,10 @@
 			isa = PBXGroup;
 			children = (
 				FFEA2EDD1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib */,
+				FF6824751D22AD2A00040016 /* BLFPriorityTableViewCell.xib */,
+				FF68247D1D22B34700040016 /* BLFStoryTitleTableViewCell.xib */,
+				FF6824811D22B46A00040016 /* BLFPointTableViewCell.xib */,
+				FF7FA92F1D27A41400FE35DA /* BLFMainTextTableViewCell.xib */,
 			);
 			name = XIB;
 			sourceTree = "<group>";
@@ -324,8 +354,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEA2EDF1D1DE1D2005AEB47 /* BLFStoryRecodeCell.xib in Resources */,
+				FF6824831D22B46A00040016 /* BLFPointTableViewCell.xib in Resources */,
 				FF4F070B1D19723D00E97062 /* LaunchScreen.storyboard in Resources */,
+				FF6824771D22AD2A00040016 /* BLFPriorityTableViewCell.xib in Resources */,
 				FF4F07081D19723D00E97062 /* Assets.xcassets in Resources */,
+				FF68247F1D22B34700040016 /* BLFStoryTitleTableViewCell.xib in Resources */,
+				FF7FA9311D27A41400FE35DA /* BLFMainTextTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,9 +508,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEB37471D1C0C23000A1A0D /* BLFNewStoryViewController.swift in Sources */,
+				FF6824851D22B77000040016 /* BLFStoryView.swift in Sources */,
+				FF7FA9301D27A41400FE35DA /* BLFMainTextTableViewCell.swift in Sources */,
 				FF4F06FE1D19723D00E97062 /* AppDelegate.swift in Sources */,
+				FF6824761D22AD2A00040016 /* BLFPriorityTableViewCell.swift in Sources */,
+				FF6824821D22B46A00040016 /* BLFPointTableViewCell.swift in Sources */,
 				FFEA2EDE1D1DE1D2005AEB47 /* BLFStoryRecodeCell.swift in Sources */,
+				FF68247E1D22B34700040016 /* BLFStoryTitleTableViewCell.swift in Sources */,
 				FF0C4BD41D1C1E3B005F2D84 /* BLFRealmManager.swift in Sources */,
+				FF6824791D22AE6300040016 /* BLFBaseTableViewCell.swift in Sources */,
 				FF4F07061D19723D00E97062 /* backlogForiOS.xcdatamodeld in Sources */,
 				FFF479281D1CD8C800219182 /* BLFStoryModel.swift in Sources */,
 				FF1C1BDF1D1AAC0900C3944B /* BLFTopListBaseViewController.swift in Sources */,

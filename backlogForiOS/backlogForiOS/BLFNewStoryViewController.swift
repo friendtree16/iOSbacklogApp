@@ -15,9 +15,12 @@ class BLFNewStoryViewController: UIViewController {
 
     // MARK: - ViewControllerOverride
     
+    var storyView: BLFStoryView?
+    
     override func loadView() {
         super.loadView()
-        
+        storyView = BLFStoryView(frame: self.view.frame)
+        self.view.addSubview(storyView!)
     }
     
     override func viewDidLoad() {
@@ -37,11 +40,7 @@ class BLFNewStoryViewController: UIViewController {
     
     func onClickRegistrationButton()  {
         // 入力情報を取得して登録用オブジェクトを作成
-        let regData = BLFStoryModel()
-        
-        regData.priority = 1
-        regData.title = "テスト"
-        regData.mainText = "うける"
+        let regData = self.storyView?.getInputData()
         
         BLFRealmManager.sharedSingleton.registrationObject(regData)
         

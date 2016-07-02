@@ -11,6 +11,7 @@ import RealmSwift
 
 class BLFStoryModel: Object {
     dynamic var priority = 0
+    dynamic var point = 0
     dynamic var title = ""
     dynamic var mainText = ""
     // primaryは外では設定しない

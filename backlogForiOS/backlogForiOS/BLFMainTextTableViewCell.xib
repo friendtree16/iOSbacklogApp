@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="215" id="KGk-i7-Jjw" customClass="BLFMainTextTableViewCell" customModule="backlogForiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本文" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2S-Bh-73k">
+                        <rect key="frame" x="27" y="8" width="38" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1ZQ-Ep-DXJ"/>
+                            <constraint firstAttribute="width" constant="38" id="jdV-GM-Epu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="baC-6J-OQX">
+                        <rect key="frame" x="22" y="46" width="276" height="155"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="baC-6J-OQX" firstAttribute="top" secondItem="g2S-Bh-73k" secondAttribute="bottom" constant="17" id="2Fu-Ig-aUY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="baC-6J-OQX" secondAttribute="trailing" constant="14" id="epB-o4-tQq"/>
+                    <constraint firstItem="baC-6J-OQX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="14" id="iau-Ws-PbT"/>
+                    <constraint firstItem="g2S-Bh-73k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kLE-me-yPj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="baC-6J-OQX" secondAttribute="bottom" constant="5" id="qa5-Gq-KnB"/>
+                    <constraint firstItem="g2S-Bh-73k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="19" id="ysc-aZ-5sk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputData" destination="baC-6J-OQX" id="ppi-O4-msX"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="335.5"/>
+        </tableViewCell>
+    </objects>
+</document>
