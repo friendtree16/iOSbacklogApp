@@ -46,7 +46,7 @@ class BLFStoryView: UIView,UITableViewDelegate,UITableViewDataSource {
         return cell!
     }
     
-    func getInputData() -> BLFStoryModel {
+    func getInputData() -> BLFStoryModel? {
         let storyModel = BLFStoryModel()
         var cells:Array<BLFBaseTableViewCell> = []
         
@@ -56,10 +56,39 @@ class BLFStoryView: UIView,UITableViewDelegate,UITableViewDataSource {
             }
         }
         
-        storyModel.priority = Int(cells[0].getRowData()!)!
-        storyModel.point = Int(cells[1].getRowData()!)!
-        storyModel.title = cells[2].getRowData()!
-        storyModel.mainText = cells[3].getRowData()!
+        if let tmpPriority:String = cells[0].getRowData(){
+            if let intPriority = Int(tmpPriority) {
+                storyModel.priority = intPriority
+            } else {
+                return nil
+            }
+            
+        } else {
+            return nil
+        }
+        if let tmpPoint:String = cells[1].getRowData() {
+            if let intPoint = Int(tmpPoint) {
+                storyModel.point = intPoint
+            } else {
+                return nil
+            }
+            
+        } else {
+            return nil
+        }
+        
+        if let tmpTitle:String = cells[2].getRowData() {
+            storyModel.title = tmpTitle
+        } else {
+            return nil
+        }
+        
+        if let tmpMainText:String = cells[3].getRowData() {
+            storyModel.mainText = tmpMainText
+        } else {
+            return nil
+        }
+        
         
         return storyModel
     }

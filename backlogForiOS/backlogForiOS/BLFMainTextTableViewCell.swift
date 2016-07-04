@@ -24,6 +24,9 @@ class BLFMainTextTableViewCell: BLFBaseTableViewCell {
     
     // MARK: - Override BaseTableViewCell
     override func getRowData() -> String? {
+        if inputData.text?.characters.count == 0 {
+            return nil
+        }
         return self.inputData.text
     }
     

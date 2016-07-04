@@ -40,9 +40,12 @@ class BLFNewStoryViewController: UIViewController {
     
     func onClickRegistrationButton()  {
         // 入力情報を取得して登録用オブジェクトを作成
-        let regData = self.storyView?.getInputData()
-        
-        BLFRealmManager.sharedSingleton.registrationObject(regData)
+        if let regData = self.storyView?.getInputData() {
+            BLFRealmManager.sharedSingleton.registrationObject(regData)
+        } else {
+            // エラー出す
+            return
+        }
         
         // 前の画面にpopする
         self.navigationController?.popViewControllerAnimated(true)
